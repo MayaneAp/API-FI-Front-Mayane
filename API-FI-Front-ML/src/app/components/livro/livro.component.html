@@ -1,0 +1,21 @@
+<div class="container">    
+    <mat-form-field appearance="outline" class="full-width" col-50>
+      <mat-label>Título</mat-label>
+      <input matInput placeholder="Preencha o título do livro" [(ngModel)]="model.title" required>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="full-width" col-50>
+        <mat-label>Autor</mat-label>
+        <input matInput placeholder="Preencha o nome do autor do livro" [(ngModel)]="model.author" required>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="full-width" col-50>
+        <mat-label>Ano</mat-label>
+        <input matInput placeholder="Preencha o ano de publicação do livro" [(ngModel)]="model.year" required>
+      </mat-form-field>
+
+    <div class="toolbar___form">
+      <button mat-raised-button routerLink="/livros">Cancelar</button>
+      <button mat-raised-button color="primary" (click)="save()">Salvar</button>
+    </div>
+  </div>
